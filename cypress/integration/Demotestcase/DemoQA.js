@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+import cypress from "cypress"
 import ElementsPage from "../../support/PageObjects/ElementsPage"
 
 describe('Demo Automation test',function(){

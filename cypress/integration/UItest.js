@@ -1,4 +1,5 @@
-describe('UI Automattion test', function(){
+describe('UI Automattion test', function()
+{
 it('UI Test Suite', function(){
 cy.visit("https://rahulshettyacademy.com/AutomationPractice/")
 //checkboxes

@@ -9,7 +9,7 @@ describe('Demo Automation test 2',function(){
  })
      })
      it('Auto complete',function(){
- cy.visit("https://demoqa.com")
+        cy.visit("https://demoqa.com")
  cy.selectCard(this.data.cardselectname2)
  cy.get(':nth-child(4) > .element-list > .menu-list > #item-1').click()
 cy.get('#autoCompleteSingleContainer').type('r')

@@ -1,0 +1,127 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2022-06-19T19:14:37.990Z",
+    "end": "2022-06-19T19:16:43.745Z",
+    "duration": 125755,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1d787e21-97c3-4db9-8d22-72cedad0572d",
+      "title": "",
+      "fullFile": "cypress/integration/Demotestcase/DemoQA2.js",
+      "file": "cypress/integration/Demotestcase/DemoQA2.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "15bf4f74-4dd3-47cb-92f6-cafb7355c750",
+          "title": "Demo Automation test 2",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Auto complete",
+              "fullTitle": "Demo Automation test 2 Auto complete",
+              "timedOut": null,
+              "duration": 74929,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://demoqa.com\");\ncy.selectCard(this.data.cardselectname2);\ncy.get(':nth-child(4) > .element-list > .menu-list > #item-1').click();\ncy.get('#autoCompleteSingleContainer').type('r');\ncy.selectclourpick(this.data.color);",
+              "err": {
+                "message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://demoqa.com/__cypress/runner/cypress_runner.js:162428:74)\n    at https://demoqa.com/__cypress/runner/cypress_runner.js:163647:16\n    at tryCatcher (https://demoqa.com/__cypress/runner/cypress_runner.js:13022:23)\n    at https://demoqa.com/__cypress/runner/cypress_runner.js:8144:41\n    at tryCatcher (https://demoqa.com/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://demoqa.com/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://demoqa.com/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://demoqa.com/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://demoqa.com/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://demoqa.com/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://demoqa.com/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://demoqa.com/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://demoqa.com/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (https://demoqa.com/__cypress/tests?p=cypress\\integration\\Demotestcase\\DemoQA2.js:107:8)",
+                "diff": null
+              },
+              "uuid": "8cb874aa-c58c-424a-a970-0b804b76e100",
+              "parentUUID": "15bf4f74-4dd3-47cb-92f6-cafb7355c750",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Calendar",
+              "fullTitle": "Demo Automation test 2 Calendar",
+              "timedOut": null,
+              "duration": 17979,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(':nth-child(4) > .element-list > .menu-list > #item-2').click();\ncy.get('#datePickerMonthYearInput').click();\ncy.get('.react-datepicker__year-select').select(this.data.year);\ncy.get('.react-datepicker__month-select').select(this.data.month);\ncy.selectdate(this.data.date);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 6000ms: Expected to find element: `:nth-child(4) > .element-list > .menu-list > #item-2`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 6000ms: Expected to find element: `:nth-child(4) > .element-list > .menu-list > #item-2`, but never found it.\n    at Context.eval (https://demoqa.com/__cypress/tests?p=cypress\\integration\\Demotestcase\\DemoQA2.js:119:8)",
+                "diff": null
+              },
+              "uuid": "d36d211e-59f3-4e13-bd92-f1f787b7bd04",
+              "parentUUID": "15bf4f74-4dd3-47cb-92f6-cafb7355c750",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "8cb874aa-c58c-424a-a970-0b804b76e100",
+            "d36d211e-59f3-4e13-bd92-f1f787b7bd04"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 92908,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

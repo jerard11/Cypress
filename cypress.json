@@ -1,3 +1,10 @@
 {
-    
+  "defaultCommandTimeout": 6000,
+  "reporter": "mochawesome",
+  "env": {
+    "url": "https://demoqa.com"
+  },
+  "projectId": "cxozpj",
+ "testFiles": "**/*.feature"
+ 
 }
